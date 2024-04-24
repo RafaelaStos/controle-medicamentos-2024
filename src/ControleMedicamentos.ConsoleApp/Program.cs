@@ -1,10 +1,14 @@
-﻿namespace ControleMedicamentos.ConsoleApp
+﻿using ControleMedicamentos.ConsoleApp.ModuloMedicamento;
+
+namespace ControleMedicamentos.ConsoleApp
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            TelaMedicamento telaMedicamento = new TelaMedicamento();
+
+            telaMedicamento.CadastrarMedicamento();
         }
     }
 }
